@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DesignPatterns.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "--file"
+    }
+  }
+}
