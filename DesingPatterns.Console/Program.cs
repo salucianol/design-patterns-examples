@@ -48,16 +48,16 @@ namespace DesignPatterns.Console {
             /*****************************
              * Decorator Pattern Example *
              *****************************/
-            //ILoggingService loggingService = new LoggingService();
-            //List<LogError> logErrors = (List<LogError>)loggingService.GetErrors();
-            //List<LogMessage> logMessages = (List<LogMessage>)loggingService.GetMessages();
+            ILoggingService loggingService = new LoggingService();
+            List<LogError> logErrors = (List<LogError>)loggingService.GetErrors();
+            List<LogMessage> logMessages = (List<LogMessage>)loggingService.GetMessages();
 
-            //loggingService = new CacheLoggingService(loggingService, new MemoryCache(new MemoryCacheOptions()));
-            //logErrors = (List<LogError>)loggingService.GetErrors();
-            //logMessages = (List<LogMessage>)loggingService.GetMessages();
+            loggingService = new CacheLoggingService(loggingService, new MemoryCache(new MemoryCacheOptions()));
+            logErrors = (List<LogError>)loggingService.GetErrors();
+            logMessages = (List<LogMessage>)loggingService.GetMessages();
 
-            //logErrors = (List<LogError>)loggingService.GetErrors();
-            //logMessages = (List<LogMessage>)loggingService.GetMessages();
+            logErrors = (List<LogError>)loggingService.GetErrors();
+            logMessages = (List<LogMessage>)loggingService.GetMessages();
 
             /****************************
              * Observer Pattern Example *
